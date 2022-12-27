@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Default Loan Prediction</title>
+</head>
+<body>
+  <h1>BANK XYZ</h1>
+  <h2>Default Loan Prediction App</h2>
+  <form action='/backend' method="post">
+      <label>NAME CONTRACT TYPE</label><br>
+      <select name="contract">
+          <option>'Cash loans'</option>
+          <option>'Revolving loans'</option>
+      </select><br><br>
+      <label>GENDER</label><br>
+      <select name="gender">
+          <option>'M'</option>
+          <option>'F'</option>
+      </select><br><br>
+      <label>CAR</label><br>
+      <select name="car">
+          <option>'N'</option>
+          <option>'Y'</option>
+      </select><br><br>
+      <label>REALTY</label><br>
+      <select name="realty">
+          <option>'N'</option>
+          <option>'Y'</option>
+      </select><br><br>
+      <label>INCOME_TOTAL</label><br>
+      <input type="number" name="income"><br><br>
+      <label>ANNUITY</label><br>
+      <input type="number" name="annuity"><br><br>
+      <label>GOODS_PRICE</label><br>
+      <input type="number" name="goods price"><br><br>
+      <label>SUITE</label><br>
+      <select name="suite">
+          <option>'Unaccompanied'</option>
+          <option>'Family'</option>
+          <option>'Spouse, partner'</option>
+          <option>'Children'</option>
+          <option>'Other_B'</option>
+          <option>'Group of people'</option>
+          <option>'Other_A'</option>
+      </select><br><br>
+      <label>INCOME_TYPE</label><br>
+      <select name="income type">
+          <option>'Pensioner'</option>
+          <option>'Working'</option>
+          <option>'Commercial associate'</option>
+          <option>'State servant'</option>
+          <option>'Maternity leave'</option>
+          <option>'Student'</option>
+          <option>'Unemployed'</option>
+          <option>'Businessman'</option>
+      </select><br><br>
+      <label>EDUCATION</label><br>
+      <select name="education">
+          <option>'Higher education'</option>
+          <option>'Secondary / secondary special'</option>
+          <option>'Incomplete higher'</option>
+          <option>'Lower secondary'</option>
+          <option>'Academic degree'</option>
+      </select><br><br>
+      <label>FAMILY_STATUS</label><br>
+      <select name="family status">
+          <option>'Married'</option>
+          <option>'Widow'</option>
+          <option>'Civil marriage'</option>
+          <option>'Single / not married'</option>
+          <option>'Separated'</option>
+      </select><br><br>
+      <label>HOUSING_TYPE</label><br>
+      <select name="housing type">
+          <option>'House / apartment'</option>
+          <option>'Municipal apartment'</option>
+          <option>'With parents'</option>
+          <option>'Rented apartment'</option>
+          <option>'Office apartment'</option>
+      </select><br><br>
+      <label>REGION_POPULATION_RELATIVE</label><br>
+      <input type="number" name="region population"><br><br>
+      <label>DAYS_BIRTH</label><br>
+      <input type="number" name="days birth"><br><br>
+      <label>DAYS_EMPLOYED</label><br>
+      <input type="number" name="days employed"><br><br>
+      <label>DAYS_REGISTRATION</label><br>
+      <input type="number" name="days registration"><br><br>
+      <label>DAYS_ID_PUBLISH</label><br>
+      <input type="number" name="days id publish"><br><br>
+      <label>CAR_AGE</label><br>
+      <input type="number" name="car age"><br><br>
+      <label>MOBIL</label><br>
+      <input type="number" name="mobile"><br><br>
+      <label>WORK_PHONE</label><br>
+      <input type="number" name="work phone"><br><br>
+      <label>CONT_MOBILE</label><br>
+      <input type="number" name="count mobile"><br><br>
+      <label>PHONE</label><br>
+      <input type="number" name="phone"><br><br>
+      <label>EMAIL</label><br>
+      <input type="number" name="email"><br><br>
+      <label>OCCUPATION_TYPE</label><br>
+      <select name="occupation">
+          <option>'Missing'</option>
+          <option>'Managers'</option>
+          <option>'Accountants'</option>
+          <option>'Laborers'</option>
+          <option>'Drivers'</option>
+          <option>'Core staff'</option>
+          <option>'Sales staff'</option>
+          <option>'Security staff'</option>
+          <option>'High skill tech staff'</option>
+          <option>'Cooking staff'</option>
+          <option>'Cleaning staff'</option>
+          <option>'Private service staff'</option>
+          <option>'Medicine staff'</option>
+          <option>'HR staff'</option>
+          <option>'Secretaries'</option>
+          <option>'Low-skill Laborers'</option>
+          <option>'Waiters/barmen staff'</option>
+          <option>'IT staff'</option>
+          <option>'Realty agents'</option>
+      </select><br><br>
+      <label>CNT_FAM_MEMBERS</label><br>
+      <input type="number" name="fam member"><br><br>
+      <label>REGION_RATING_CLIENT</label><br>
+      <input type="number" name="reg rating client"><br><br>
+      <label>WEEKDAY_APPR_PROCESS_START</label><br>
+      <select name="weekday">
+          <option>'SUNDAY'</option>
+          <option>'MONDAY'</option>
+          <option>'TUESDAY'</option>
+          <option>'WEDNESDAY'</option>
+          <option>'THURSDAY'</option>
+          <option>'FRIDAY'</option>
+          <option>'SATURDAY'</option>
+      </select><br><br>
+      <label>HOUR_APPR_PROCESS_START</label><br>
+      <input type="number" name="hour appr process start"><br><br>
+      <label>REG_REGION_NOT_LIVE_REGION</label><br>
+      <input type="number" name="reg region not live region"><br><br>
+      <label>REG_REGION_NOT_WORK_REGION</label><br>
+      <input type="number" name="reg region not work region"><br><br>
+      <label>LIVE_REGION_NOT_WORK_REGION</label><br>
+      <input type="number" name="live reg not work region"><br><br>
+      <label>REG_CITY_NOT_LIVE_CITY</label><br>
+      <input type="number" name="reg city not live city"><br><br>
+      <label>REG_CITY_NOT_WORK_CITY</label><br>
+      <input type="number" name="reg city not work city"><br><br>
+      <label>LIVE_CITY_NOT_WORK_CITY</label><br>
+      <input type="number" name="live city not work city"><br><br>
+      <label>ORGANIZATION_TYPE</label><br>
+      <select name="organization">
+          <option>'XNA'</option>
+          <option>'Bank'</option>
+          <option>'Security'</option>
+          <option>'Business Entity Type 3'</option>
+          <option>'Housing'</option>
+          <option>'School'</option>
+          <option>'Self-employed'</option>
+          <option>'Industry: type 9'</option>
+          <option>'Trade: type 1'</option>
+          <option>'Business Entity Type 2'</option>
+          <option>'Industry: type 7'</option>
+          <option>'Government'</option>
+          <option>'Transport: type 3'</option>
+          <option>'Services'</option>
+          <option>'Business Entity Type 1'</option>
+          <option>'Industry: type 4'</option>
+          <option>'Construction'</option>
+          <option>'Transport: type 4'</option>
+          <option>'Trade: type 7'</option>
+          <option>'Trade: type 3'</option>
+          <option>'Kindergarten'</option>
+          <option>'Medicine'</option>
+          <option>'Other'</option>
+          <option>'Legal Services'</option>
+          <option>'Industry: type 1'</option>
+          <option>'University'</option>
+          <option>'Agriculture'</option>
+          <option>'Industry: type 11'</option>
+          <option>'Transport: type 2'</option>
+          <option>'Postal',</option>
+          <option>'Security Ministries'</option>
+          <option>'Industry: type 12'</option>
+          <option>'Industry: type 3'</option>
+          <option>'Restaurant'</option>
+          <option>'Military'</option>
+          <option>'Hotel'</option>
+          <option>'Culture'</option>
+          <option>'Mobile'</option>
+          <option>'Electricity'</option>
+          <option>'Police'</option>
+          <option>'Industry: type 5'</option>
+          <option>'Trade: type 6'</option>
+          <option>'Telecom'</option>
+          <option>'Realtor'</option>
+          <option>'Trade: type 2'</option>
+          <option>'Industry: type 2'</option>
+          <option>'Insurance'</option>
+          <option>'Industry: type 10'</option>
+          <option>'Industry: type 6'</option>
+          <option>'Emergency'</option>
+          <option>'Advertising'</option>
+          <option>'Trade: type 4'</option>
+          <option>'Cleaning'</option>
+          <option>'Religion'</option>
+          <option>'Industry: type 8'</option>
+          <option>'Transport: type 1'</option>
+          <option>'Trade: type 5'</option>
+          <option>'Industry: type 13'</option>
+      </select><br><br>
+      <label>EXT_SOURCE_1</label><br>
+      <input type="number" name="ext source1"><br><br>
+      <label>EXT_SOURCE_2</label><br>
+      <input type="number" name="ext source2"><br><br>
+      <label>EXT_SOURCE_3</label><br>
+      <input type="number" name="ext source3"><br><br>
+      <label>FONDKAPREMONT_MODE</label><br>
+      <select name="fondkapremont">
+          <option>'Missing'</option>
+          <option>'reg oper account'</option>
+          <option>'reg oper spec account'</option>
+          <option>'not specified'</option>
+          <option>'org spec account'</option>
+      </select><br><br>
+      <label>HOUSETYPE_MODE</label><br>
+      <select name="housetype">
+          <option>'Missing'</option>
+          <option>'block of flats'</option>
+          <option>'specific housing'</option>
+          <option>'terraced house'</option>
+      </select><br><br>
+      <label>WALLSMATERIAL_MODE</label><br>
+      <select name="wallsmaterial">
+          <option>'Missing'</option>
+          <option>'Panel'</option>
+          <option>'Stone, brick'</option>
+          <option>'Block'</option>
+          <option>'Wooden'</option>
+          <option>'Mixed'</option>
+          <option>'Monolithic'</option>
+          <option>'Others'</option>
+      </select><br><br>
+      <label>EMERGENCYSTATE_MODE</label><br>
+      <select name="emergency">
+          <option>'No'</option>
+          <option>'Missing'</option>
+          <option>'Yes'</option>
+      </select><br><br>
+      <label>OBS_60_CNT_SOCIAL_CIRCLE</label><br>
+      <input type="number" name="obs 60 cnt sc"><br><br>
+      <label>DEF_60_CNT_SOCIAL_CIRCLE</label><br>
+      <input type="number" name="def 60 cnt sc"><br><br>
+      <label>DAYS_LAST_PHONE_CHANGE</label><br>
+      <input type="number" name="days last phone change"><br><br>
+      <label>FLAG_DOCUMENT_2</label><br>
+      <input type="number" name="doc2"><br><br>
+      <label>FLAG_DOCUMENT_3</label><br>
+      <input type="number" name="doc3"><br><br>
+      <label>FLAG_DOCUMENT_4</label><br>
+      <input type="number" name="doc4"><br><br>
+      <label>FLAG_DOCUMENT_4</label><br>
+      <input type="number" name="doc5"><br><br>
+      <label>FLAG_DOCUMENT_4</label><br>
+      <input type="number" name="doc6"><br><br>
+      <label>FLAG_DOCUMENT_7</label><br>
+      <input type="number" name="doc7"><br><br>
+      <label>FLAG_DOCUMENT_8</label><br>
+      <input type="number" name="doc8"><br><br>
+      <label>FLAG_DOCUMENT_9</label><br>
+      <input type="number" name="doc9"><br><br>
+      <label>FLAG_DOCUMENT_10</label><br>
+      <input type="number" name="doc10"><br><br>
+      <label>FLAG_DOCUMENT_11</label><br>
+      <input type="number" name="doc11"><br><br>
+      <label>FLAG_DOCUMENT_12</label><br>
+      <input type="number" name="doc12"><br><br>
+      <label>FLAG_DOCUMENT_13</label><br>
+      <input type="number" name="doc13"><br><br>
+      <label>FLAG_DOCUMENT_14</label><br>
+      <input type="number" name="doc14"><br><br>
+      <label>FLAG_DOCUMENT_15</label><br>
+      <input type="number" name="doc15"><br><br>
+      <label>FLAG_DOCUMENT_16</label><br>
+      <input type="number" name="doc16"><br><br>
+      <label>FLAG_DOCUMENT_17</label><br>
+      <input type="number" name="doc17"><br><br>
+      <label>FLAG_DOCUMENT_18</label><br>
+      <input type="number" name="doc18"><br><br>
+      <label>FLAG_DOCUMENT_19</label><br>
+      <input type="number" name="doc19"><br><br>
+      <label>FLAG_DOCUMENT_20</label><br>
+      <input type="number" name="doc20"><br><br>
+      <label>FLAG_DOCUMENT_21</label><br>
+      <input type="number" name="doc21"><br><br>
+      <input type="submit" value="Predict">
+  </form>
+</body>
+</html>
